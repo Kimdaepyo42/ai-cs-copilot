@@ -1,12 +1,17 @@
-# AI CS Copilot
+# ai-cs-copilot
 
-AI CS Copilot helps support teams draft grounded customer replies from FAQ, billing policy, and past support cases.
+ai-cs-copilot은 CS 학습자와 면접 준비자를 위한 근거 기반 답변 도우미입니다.
 
-## Team Rules
+## 운영 규칙
 
-- Customer-facing answer prompts must be reviewed by Kim before merge.
-- Refund, billing, cancellation, and contract policy answers must cite a source.
-- Customer names, emails, company names, and raw conversation text must be masked before sharing logs externally.
-- If FAQ confidence is below 0.72, the assistant should use the fallback answer instead of guessing.
-- VIP customer incidents should be handled before non-urgent copy or UI polish tasks.
-- Prompt changes need regression checks on at least 20 support cases before release.
+CS 답변은 항상 핵심 답변, 상세 설명, 근거 개념 순서로 제공합니다.
+
+모르는 질문이나 근거가 부족한 질문에는 추측으로 답하지 않고 확인 필요 상태로 안내합니다.
+
+면접 모드의 답변은 1분 안에 말할 수 있는 짧은 답변과 추가 설명을 함께 제공합니다.
+
+답변 품질에 영향을 주는 프롬프트 변경은 최소 5개의 샘플 질문으로 회귀 확인 후 병합합니다.
+
+AI가 생성한 답변은 사람이 검토할 수 있도록 사용한 근거와 판단 기준을 함께 남깁니다.
+
+API 키, 모델 설정, 환경변수는 코드와 README에 직접 기록하지 않습니다.
